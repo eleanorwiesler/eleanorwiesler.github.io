@@ -11,7 +11,16 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Playfair Display";
   letter-spacing: 5px;
 }
-</style>x
+header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .w3-col {
+      flex: 1;
+    }  
+</style>
 </head>
 <body>
 
@@ -32,16 +41,14 @@ h1, h2, h3, h4, h5, h6 {
 
 <!-- Header -->
 <header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
-<div class="w3-col m6 w3-padding-large">
-</div>
-<img src = "./images/new_prof_art.png"  alt="Profile" width="500" height="500" >  
-  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+  <div class="w3-row">
+    <div class="w3-col m6 w3-padding-large">
+      <img src="./images/new_prof_art.png" alt="Profile" width="500" height="500">
+    </div>
     <div class="w3-col m6 w3-padding-large w3-hide-small">
-    	<div class="w3-col m6 w3-padding-large">
-      		<h1 class="w3-center">Hi, I'm Eleanor Wiesler</h1><br>
-      		<h5 class="w3-center"> A.B Candidate in Mathematics, Harvard College 2025</h5>
-      		<p class="w3-large">An aspiring physician-scientist interested in machine learning, big data for health, and journalism! </p>
-      </div>
+      <h1 class="w3-center">Hi, I'm Eleanor Wiesler</h1><br>
+      <h5 class="w3-center"> A.B Candidate in Mathematics, Harvard College 2025</h5>
+      <p class="w3-large">An aspiring physician-scientist interested in machine learning, big data for health, and journalism! </p>
     </div>
   </div>
 </header>
