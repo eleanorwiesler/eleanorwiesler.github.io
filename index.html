@@ -6,56 +6,78 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <style>
-body {font-family: "Times New Roman", Georgia, Serif;}
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Playfair Display";
-  letter-spacing: 5px;
-}
-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding-top: 100px; /* Increase the padding to move the content down */
-    }
-
-    .w3-col {
-      flex: 1;
-    }
-
-    .w3-col img {
-      margin-top: 50px; /* Increase the margin to give more room to the image on the left */
-    }
-
-    .w3-col.m6 {
-      padding-top: 50px; /* Increase the padding to move the text down */
-    }
-
-    .w3-col.m6 h1 {
-      padding-top: 30px; /* Add padding to move the text "Hi, my name is Rob" further down */
-    } 
+  body {
+    font-family: "Times New Roman", Georgia, Serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Playfair Display";
+    letter-spacing: 5px;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 100px; /* Increase the padding to move the content down */
+  }
+  
+  .w3-col {
+    flex: 1;
+  }
+  
+  .w3-col img {
+    margin-top: 50px; /* Increase the margin to give more room to the image on the left */
+  }
+  
+  .w3-col.m6 {
+    padding-top: 50px; /* Increase the padding to move the text down */
+  }
+  
+  .w3-col.m6 h1 {
+    padding-top: 30px; /* Add padding to move the text "Hi, my name is Rob" further down */
+  }
+  
+  /* Adjust the width of the text container */
+  #Experience .w3-col {
+    flex: 0 0 55%;
+  }
+  
+  #Experience img {
+    flex: 0 0 40%; /* Reduce the width of the photo container to give more space to the text */
+  }
+  
   #Experience {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-
-  #Experience img {
-    flex: 0 0 40%; /* Reduce the width of the photo container to give more space to the text */
-  }
-
+  
   #Experience .w3-col {
-    flex: 0 0 55%; /* Adjust the width of the text container */
+    flex: 0 0 48%; /* Adjust the width of the text container */
   }
-  #Experience {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-#Experience .w3-col {
-  flex: 0 0 48%; /* Adjust the width of the text container */
-}
+  
+  /* Style for active navigation link */
+  .w3-bar-item.active {
+    text-decoration: underline;
+  }
+  
+  /* Style for active section in navbar */
+  .w3-bar-item.active-section {
+    text-decoration: underline;
+  }
+  
+  /* Add class to header for "About" section */
+  header.w3-display-container.w3-content.w3-wide#About .w3-bar-item:nth-child(2) {
+    text-decoration: underline;
+  }
+  
+  /* Add class to sections for active section */
+  .w3-row:target {
+    padding-top: 120px; /* Adjust this value as needed */
+  }
 </style>
+  
 </head>
 <body>
 
@@ -65,17 +87,16 @@ header {
     <a href="#home" class="w3-bar-item w3-button">Eleanor Wiesler</a>
     <!-- Right-sided navbar links. Hide them on small screens -->
     <div class="w3-right w3-hide-small">
-      <a href="#about" class="w3-bar-item w3-button">About</a>
-      <a href="#experience" class="w3-bar-item w3-button">Experience</a>
-      <a href="#publications" class="w3-bar-item w3-button">Publications</a>
-      <a href="#volunteering" class="w3-bar-item w3-button">Volunteering</a>
-      <a href="#arts" class="w3-bar-item w3-button">Arts</a>
+      <a href="#About" class="w3-bar-item w3-button">About</a>
+      <a href="#Experience" class="w3-bar-item w3-button">Experience</a>
+      <a href="#Publication" class="w3-bar-item w3-button">Publications</a>
     </div>
   </div>
 </div>
 
+
 <!-- Header -->
-<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="About">
   <div class="w3-row">
     <div class="w3-col m6 w3-padding-large">
       <img src="./images/new_prof_art.png" alt="Profile" width="650" height="650">
@@ -91,12 +112,6 @@ header {
 <!-- Page content -->
 <div class="w3-content" style="max-width:1100px">
 
-  <!-- About Section -->
-  <div class="w3-row w3-padding-64" id="about">
-
-  </div>
-  
-  <hr>
   
   <!-- Experience Section -->
   <div class="w3-row w3-padding-64" id="Experience">
@@ -123,7 +138,7 @@ header {
   <hr>
 
   <!-- Publications Section -->
-  <div class="w3-container w3-padding-64" id="contact">
+  <div class="w3-container w3-padding-64" id="Publication">
     <h1>Publications</h1><br>
     <p> "River House Renewal Must Consider Rising Sea Level". The Harvard Crimson. 2022.</p>
     <p> "Scientists Must Only Seek Truth". The Harvard Crimson. 2023.</p>
@@ -139,7 +154,7 @@ header {
 <!-- Footer -->
 <footer class="w3-center w3-light-grey w3-padding-32">
   <p>Eleanor Wiesler © 2023</a></p>
-</footer>
 
+</footer>
 </body>
 </html>
