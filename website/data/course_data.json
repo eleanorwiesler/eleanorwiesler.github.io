@@ -1,7 +1,14 @@
-[{"title": "Deep Learning for 3D Geometry",
-  "authors": ["Daniel Ritchie", "Zoë Marschner"],
-  "conference": "Symposium on Geometry Processing",
+[{"title": "Differential Geometry (Harvard, Math 136)",
+  "authors": ["Lead Instructor: Oliver Knill"],
+  "conference": "Fall",
   "year": 2024,
-  "image": "sdf_sgp_course.png",
+  "image": "diffgeo.png",
+  "links": {  "Course Page": "https://school.geometryprocessing.org/summerschool-2024/index.html#course2", "Video": "https://www.youtube.com/watch?v=r6S0jQqyZDM","Slides": "slides/neural_implicits_sgp_course.pdf"} 
+}, 
+{"title": "Linear Algebra (Harvard, Math 121)",
+  "authors": ["Lead Instructor: Janet Chen"],
+  "conference": "Spring",
+  "year": 2024,
+  "image": "linalg.png",
   "links": {  "Course Page": "https://school.geometryprocessing.org/summerschool-2024/index.html#course2", "Video": "https://www.youtube.com/watch?v=r6S0jQqyZDM","Slides": "slides/neural_implicits_sgp_course.pdf"} 
 }]
