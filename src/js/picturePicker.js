@@ -1,5 +1,5 @@
 window.addEventListener('load', function init() {
-	fetch('public/img/spotlight_pictures/manifest.json')
+	fetch('public/img/portrait/manifest.json')
 	  .then(function(response) {
 	    return response.json();
 	  })
@@ -13,7 +13,7 @@ window.addEventListener('load', function init() {
 
 	  	portrait = document.getElementById("portrait");
 	  	portrait.title = title;
-	  	portrait.src = "public/img/spotlight_pictures/" + encodeURIComponent(chosen_image);
+	  	portrait.src = "public/img/project_images/kry.png";
 
 	  });
 
