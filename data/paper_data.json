@@ -9,18 +9,17 @@
   "conference": "MIT Summer Geometry Initiative",
   "year": 2024,
   "image": "collision.png",
-  "links": {"Program": "https://summergeometry.org/sgi2024/"},
-  "note": "(* denotes  equal contribution)"
-}, {"title": "Neural Shape Sweeping",
+  "links": {"Program website": "https://summergeometry.org/sgi2024/"}}, {"title": "Neural Shape Sweeping",
 "authors": [ "Advisors: Noam Aigerman, Silvia Sellan"],
 "conference": "MIT Summer Geometry Initiative",
 "year": 2024,
 "image": "spot_sweep.png",
-"links": {  "Program": "https://summergeometry.org/sgi2024/"} 
+"links": {  "Program website": "https://summergeometry.org/sgi2024/"},
+"note": "***Paper forthcoming***"
 },
 {"title": "AxivLight: Machine learned model for outdoor time estimation from Axivity AX3 wrist-worn light sensors",
   "authors": ["Advisor: Prof. Aiden Doherty"],
-  "conference": "Paper forthcoming",
+  "conference": "***Paper forthcoming***",
   "year": 2023,
   "image": "axivlight.png",
   "links": {"Lab website": "https://www.bdi.ox.ac.uk/research/wearables-group"}
@@ -29,5 +28,5 @@
   "conference": "Proceedings of the National Academy of Sciences (PNAS)",
   "year": 2020,
   "image": "pnas.png",
-  "links": {"Paper": "https://www.pnas.org/doi/full/10.1073/pnas.2006949117"}
+  "links": {"Paper": "https://www.pnas.org/doi/full/10.1073/pnas.2006949117", "Lab website": "https://medicine.yale.edu/profile/akiko-iwasaki/" }
 }]

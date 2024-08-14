@@ -1,80 +1,89 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>Eleanor Wiesler</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="public/css/homeStylesheet.css">
-	<link rel="stylesheet" href="public/css/generalStylesheet.css">
-	<link rel="stylesheet" href="public/css/darkmodeStylesheet.css">
-	<script src="src/js/cube.js"></script>
-	<script src="src/js/researchListBuilder.js"></script>
-	<script src="src/js/darkmode.js"></script>
-	<script src="src/js/picturePicker.js"></script>
+    <meta charset="utf-8">
+    <title>Eleanor Wiesler</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="public/css/homeStylesheet.css">
+    <link rel="stylesheet" href="public/css/generalStylesheet.css">
+    <link rel="stylesheet" href="public/css/darkmodeStylesheet.css">
+    <script src="src/js/cube.js"></script>
+    <script src="src/js/researchListBuilder.js"></script>
+    <script src="src/js/darkmode.js"></script>
+    <script src="src/js/picturePicker.js"></script>
 
-	<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@0;1&family=Source+Code+Pro:wght@600;700&display=swap" rel="stylesheet">
-	<link rel="icon" href="favicon.png" sizes="32x32">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@0;1&family=Source+Code+Pro:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.png" sizes="32x32">
 </head>
 <body>
-	<div id="sidebar">
-		<div id="sidebar-box">
-			<h1 id="name"> 
-			Eleanor Wiesler
-			</h1> 
-			<img src="/website/public/img/portrait/portrait1.png" alt="Portrait" style="width:300px; height:auto;">
-			<div id="info">
-		
-				<h2> A.B. Candidate in Mathematics, secondary in Computer Science at Harvard</h2>
-				<!-- inline svgs for icons. extracted from files in public/img/icons -->
-				<!-- <svg id="git"  viewBox="0 0 632.01 700">
-					<path class="cls-1" d="M225.67,676.93c0-18.34-.57-46.21-.57-84C111.84,613.81,82.53,565.35,73.52,540c-5.07-13-27-53-46.21-63.68C11.53,467.86-11,447,26.75,446.45c35.5-.57,60.85,32.68,69.31,46.21,40.57,68.18,105.37,49,131.3,37.19,3.94-29.3,15.77-49,28.74-60.3C155.79,458.28,51,419.4,51,247c0-49,17.47-89.6,46.2-121.15-4.5-11.27-20.28-57.48,4.51-119.47,0,0,37.76-11.83,124,46.21a425.14,425.14,0,0,1,225.4,0c86.22-58.6,124-46.21,124-46.21,24.79,62,9,108.2,4.5,119.47,28.74,31.55,46.21,71.56,46.21,121.15,0,173-105.38,211.32-205.68,222.59,16.34,14.09,30.43,41.14,30.43,83.4,0,60.3-.57,97.46-.57,124C429.94,698,248.47,696.52,225.67,676.93Z"/>
-				</svg> -->
+    <div id="sidebar">
+        <div id="sidebar-box">
+            <h1 id="name"> 
+                Eleanor Wiesler
+            </h1> 
+            <img src="/website/public/img/portrait/portrait1.png" alt="Portrait" style="width:300px; height:auto;">
+            <div id="info">
+                <h2>A.B. Candidate in Mathematics, secondary in Computer Science at Harvard</h2>
+				<br>
+				<br>
+                <div id="social-icons" style="display: flex; gap: 10px;">
+                    <!-- Mail Icon -->
+					<a href="mailto:ewiesler@college.harvard.edu" target="_blank" aria-label="Email">
+    					<img src="/website/public/img/icons/icons8-mail.svg" alt="Mail Icon" style="width:30px; height:auto;">
+					</a
+					<!-- Github Icon -->
+                    <a href="https://github.com/eleanorwiesler" target="_blank" aria-label="Google Scholar">
+                        <img src="/website/public/img/icons/icons8-github-50.png" alt="Github Icon" style="width:30px; height:auto;">
+                    </a>
+					<!-- LinkedIn Icon -->
+                    <a href="https://www.linkedin.com/in/eleanor-wiesler/" target="_blank" aria-label="LinkedIn">
+                        <img src="/website/public/img/icons/icons8-linkedin.svg" alt="Linkedin Icon" style="width:30px; height:auto;">
+                    </a>
+					<!-- Google Scholar Icon -->
+                    <a href="https://scholar.google.com/citations?user=wEzFCIwAAAAJ&hl=en&oi=ao" target="_blank" aria-label="Google Scholar">
+                        <img src="/website/public/img/icons/icons8-google-scholar.svg" alt="Google Scholar Icon" style="width:30px; height:auto;">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 
-				<div id="email">
-					<svg id="mail" viewBox="0 0 766.08 700">
-						<rect class="st0" x="13.24" y="116.68" width="731.22" height="475.29" rx="29.84"/><path class="st0" d="M28.7,125.61,342.29,386.77a57.2,57.2,0,0,0,73.15,0L727.87,127.26"/><line class="st0" x1="31.72" y1="583.22" x2="281.52" y2="335.61"/><line class="st0" x1="725.4" y1="582.87" x2="475.87" y2="335.82"/>
-					</svg>	 
-			
-				</div>
-				
-			</div>
-		</div>
-	</div>
+    <div id="main">
+        <p id="about">
+            Hi, I'm a senior at Harvard studying Mathematics with a secondary in Computer Science. Currently, I am a member of the <a href="https://weber.seas.harvard.edu/" style="color: blue;">Geometric Machine Learning Group</a> at Harvard, advised by Professor Melanie Weber, where I am working on novel approaches for graph machine learning on directed graphs using discrete Ricci curvature.
+        </p>
+		<br>
+        <p id="about">
+            I was awarded the 2024 <a href="https://sgi.mit.edu/sgi-fellows/sgi-2024-fellows" style="color: blue;">MIT Summer Geometry Initiative Fellowship</a>, where I conducted geometric research in computer vision and computer graphics advised by Professors Noam Aigerman, Silvia Sellan, and Paul Kry. Previously in 2023, I was a Visiting Undergraduate Researcher at the <a href="https://www.bdi.ox.ac.uk/research/wearables-group" style="color: blue;">University of Oxford Big Data Institute</a>, advised by Prof. Aiden Doherty in the Wearables Group.
+        </p>
+		<br>
+        <p id="about">
+            Even earlier, I conducted biostatistical research at <a href="https://ciss.umayor.cl/en/" style="color: blue;">Universidad Mayor</a> in Santiago, Chile, under Prof. Nicolas Montalva and molecular biology research at <a href="https://medicine.yale.edu/profile/akiko-iwasaki/" style="color: blue;">Yale School of Medicine</a> under Prof. Akiko Iwasaki. From 2020-2021, I worked full time on the research team of the biotech company <a href="https://detect.com" style="color: blue;">Detect</a> during the Covid-19 pandemic on my gap year.
+        </p>
 
+        <h2 id="research">Research</h2>
+        <div id="research-list">
+            <!-- Research list generated by researchListBuilder.js -->
+        </div>
 
-	<div id="main">
-		<br>
-		<br>
-		<p id="about">
-			Hi, I'm a senior at Harvard studying Mathematics with a secondary in Computer Science. Currently I am a member of the <a href="https://weber.seas.harvard.edu/" style="color: blue;">Geometric Machine Learning Group</a> at Harvard, advised by Professor Melanie Weber where I am working on novel approaches for graph machine learning on directed graphs using discrete Ricci curvature. 
-		</p>
-		<br>
-		<p id="about">
-			I was awarded the 2024 <a href="https://sgi.mit.edu/sgi-fellows/sgi-2024-fellows"style="color: blue;"> MIT Summer Geometry Initiative Fellowship</a>, where I conducted geometric research in computer vision and computer graphics advised by Professors Noam Aigerman, Silvia Sellan, and Paul Kry.
-			Previously in 2023 I was a Visiting Undergraduate Researcher at the <a href="https://www.bdi.ox.ac.uk/research/wearables-group"style="color: blue;"> University of Oxford Big Data Institute</a>, advised by Prof. Aiden Doherty in the Wearables Group. 
-		</p>
-		<br>
-		<p id="about">
-		Even earlier, I conducted biostatistical research at Universidad Mayor in Santiago, Chile under Prof. Nicolas Montalva and molecular biology research at Yale School of Medicine under Prof. Akiko Iwasaki. From 2020-2021 I worked full time on the research team of the biotech company Detect during the Covid-19 pandemic on my gap year.
-		</p>
-		
-		<h2 id="reserach">Research</h2>
-		<div id ="research-list">
-		</div>
-		<h2 id="teaching">Teaching</h2>
-		<div id ="teaching-list">
-		</div>
-		<h2 id="projects">
-			<a href="/projects.html" class="ext_link">Curriculum Vitae<svg viewBox="0 0 350 350" class="link_arrow"> 
+        <h2 id="teaching">Teaching</h2>
+        <div id="teaching-list">
+            <!-- Teaching list generated by researchListBuilder.js -->
+        </div>
+
+        <h2 id="projects">
+			<a href="CV2024.pdf" class="ext_link">Curriculum Vitae
+				<svg viewBox="0 0 350 350" class="link_arrow"> 
 					<line class="st0" x1="25" y1="325" x2="325" y2="25"/>
 					<path class="st0" d="M325,25"/>
 					<polyline class="st1" points="110,25 325,25 325,240 "/>
 				</svg>
 			</a>
-		</h2>
-	</div>
-	
-	<p id="footer">
-			Copyright Eleanor Wiesler, last updated Aug 11</p>
+		</h2>		
+    </div>
+
+    <p id="footer">
+        Copyright Eleanor Wiesler, last updated Aug 14. Website <a href="https://github.com/eleanorwiesler/eleanorwiesler.github.io"><u>code</u></a> adapted from Z. Marschner.
+    </p>
 </body>
 </html>
