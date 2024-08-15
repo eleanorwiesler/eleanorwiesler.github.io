@@ -1,6 +1,6 @@
 # Personal Website
 
-The code is adapted from Zoe Marshner's website zoemarschner.com 
+The code and website design is adapted from Zoe Marshner's website zoemarschner.com.
 
 ## Development
 
