@@ -1,14 +1,20 @@
-[{"title": "Differential Geometry (Harvard, Math 136)",
-  "authors": ["Lead Instructor: Oliver Knill"],
-  "conference": "Fall",
-  "year": 2024,
-  "image": "diffgeo.png",
-  "links": {"Course website": "https://people.math.harvard.edu/~knill/teaching/math136/index.html"} 
-}, 
-{"title": "Linear Algebra (Harvard, Math 121)",
-  "authors": ["Lead Instructors: Janet Chen, Gage Martin"],
-  "conference": "Spring",
-  "year": 2024, 2025
-  "image": "simplified-matrix-form.jpg",
-  "links": { } 
-}]
+[
+  {
+    "title": "Differential Geometry (Harvard, Math 136)",
+    "authors": ["Lead Instructor: Oliver Knill"],
+    "conference": "Fall",
+    "year": 2024,
+    "image": "diffgeo.png",
+    "links": {
+      "Course website": "https://people.math.harvard.edu/~knill/teaching/math136/index.html"
+    }
+  },
+  {
+    "title": "Linear Algebra (Harvard, Math 121)",
+    "authors": ["Lead Instructors: Janet Chen, Gage Martin"],
+    "conference": "Spring",
+    "year": [2024, 2025],
+    "image": "simplified-matrix-form.jpg",
+    "links": {}
+  }
+]
