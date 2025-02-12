@@ -3,12 +3,12 @@
   "conference": "Fall",
   "year": 2024,
   "image": "diffgeo.png",
-  "links": {} 
+  "links": {"Course website": "https://people.math.harvard.edu/~knill/teaching/math136/index.html"} 
 }, 
 {"title": "Linear Algebra (Harvard, Math 121)",
-  "authors": ["Lead Instructor: Janet Chen"],
+  "authors": ["Lead Instructors: Janet Chen, Gage Martin"],
   "conference": "Spring",
-  "year": 2024,
+  "year": 2024,205
   "image": "simplified-matrix-form.jpg",
   "links": { } 
 }]
