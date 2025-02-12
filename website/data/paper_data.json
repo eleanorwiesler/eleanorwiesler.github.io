@@ -6,8 +6,8 @@
 "links": {  "Lab website": "https://weber.seas.harvard.edu/"} 
 },
 {"title": "Improving Dense Object Detection in Natural Environments with YOLOv10 using Annealing-based Data Augmentation Algorithm",
-  "authors": ["Advisor: Todd Zickler"],
-  "conference": "Harvard CS283 Advanced Computer Vision     ***First-author Paper Forthcoming***",
+  "authors": ["Advisor: Todd Zickler, with Trace Baxley"],
+  "conference": "Harvard CS283 Advanced Computer Vision     ***Paper Forthcoming***",
   "year": 2024,
   "image": "fish1.png",
   "links": {"Project Page": "https://eleanorwiesler.com/projectpage"}}, 
