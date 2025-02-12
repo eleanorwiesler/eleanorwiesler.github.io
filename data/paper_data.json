@@ -25,7 +25,7 @@
 "image": "cmip.png",
 "links": {"Lab Website": "https://seas.harvard.edu/faculty?search=%22Kaighin%20A%20McColl%22#content"}
 },
-{"title": "Reduced Deformation Collision Detection",
+{"title": "Physics-informed Reduced Deformation Collision Detection with BD-Trees",
   "authors": ["Advisor: Paul Kry"],
   "conference": "MIT Summer Geometry Initiative",
   "year": 2024,
