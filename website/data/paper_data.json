@@ -18,7 +18,6 @@
   "image": "axivlight.png",
   "links": {"Lab website": "https://www.bdi.ox.ac.uk/research/wearables-group"}
 }, 
-},
 {"title": "Physics-informed Reduced Deformation Collision Detection",
   "authors": ["Advisor: Paul Kry"],
   "conference": "MIT CSAIL, Summer Geometry Initiative",
