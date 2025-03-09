@@ -18,16 +18,10 @@
   "image": "axivlight.png",
   "links": {"Lab website": "https://www.bdi.ox.ac.uk/research/wearables-group"}
 }, 
-{"title": "Geophysical land surface relative humidity theoretical modeling with CMIP6 clmate simulations",
-"authors": ["Advisor: Kaighin McColl"],
-"conference": "Harvard Departments of Earth and Planetary Science and Applied Mathematics",
-"year": 2023,
-"image": "climate.png",
-"links": {"Lab Website": "https://seas.harvard.edu/faculty?search=%22Kaighin%20A%20McColl%22#content"}
 },
-{"title": "Physics-informed Reduced Deformation Collision Detection with BD-Trees",
+{"title": "Physics-informed Reduced Deformation Collision Detection",
   "authors": ["Advisor: Paul Kry"],
-  "conference": "MIT Summer Geometry Initiative",
+  "conference": "MIT CSAIL, Summer Geometry Initiative",
   "year": 2024,
   "image": "bd-trees.png",
   "links": {"Project": "https://summergeometry.org/sgi2024/reduced-deformation-collision-detection/"}}, 
