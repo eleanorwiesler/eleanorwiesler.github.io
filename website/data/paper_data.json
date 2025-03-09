@@ -5,7 +5,7 @@
 "image": "newgraph.png",
 "links": {  "Lab website": "https://weber.seas.harvard.edu/"} 
 },
-{"title": "Dense Object Detection Optimization with CNNs via Pseudo-Simulated Annealing",
+{"title": "Optimization of Dense Object Detection with CNNs via Pseudo-Simulated Annealing",
   "authors": ["Advisor: Todd Zickler, with Trace Baxley"],
   "conference": "Harvard CS283 Advanced Computer Vision     ***First-author Paper Forthcoming***",
   "year": 2024,
