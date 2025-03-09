@@ -1,11 +1,11 @@
-[{"title": "Curvature-based Machine Learning on Directed Graphs",
+[{"title": "Curvature-based Machine Learning on Directed Networks",
 "authors": [ "Advisor: Melanie Weber"],
 "conference": "Harvard Departments of Applied Mathematics and Computer Science",
 "year": 2024,
 "image": "newgraph.png",
 "links": {  "Lab website": "https://weber.seas.harvard.edu/"} 
 },
-{"title": "Improving Dense Object Detection in Natural Environments with YOLOv10 using Annealing-based Data Augmentation Algorithm",
+{"title": "Improving Dense Object Detection with Convolutional Neural Networks Using Pseudo-Simulated Annealing",
   "authors": ["Advisor: Todd Zickler, with Trace Baxley"],
   "conference": "Harvard CS283 Advanced Computer Vision     ***First-author Paper Forthcoming***",
   "year": 2024,
