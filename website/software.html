@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Software Projects - Eleanor Wiesler</title>
+
+  <!-- Link to your existing CSS files -->
+  <link rel="stylesheet" href="public/css/homeStylesheet.css">
+  <link rel="stylesheet" href="public/css/generalStylesheet.css">
+  <link rel="stylesheet" href="public/css/darkmodeStylesheet.css">
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@0;1&family=Source+Code+Pro:wght@600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* General body styling */
+    body {
+      font-family: 'Crimson Text', serif;
+      background: white;
+      margin: 0;
+      padding: 40px;
+    }
+
+    /* Top navigation bar styling */
+    .topbar {
+      position: absolute;
+      top: 20px;
+      right: 40px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 8px 12px;
+      border-radius: 10px;
+      font-family: 'Source Code Pro', monospace;
+      font-size: 14px;
+      z-index: 1000;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .topbar a {
+      color: #000;
+      text-decoration: none;
+      padding: 4px 8px;
+      border-radius: 5px;
+      transition: background-color 0.2s;
+    }
+
+    .topbar a:hover {
+      background-color: #e0e0e0;
+    }
+
+    /* Container for all projects */
+    .projects-container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    /* Individual project box styling */
+    .project-box {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 20px;
+      border: 1px solid #ccc;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 40px 0; /* Increased top and bottom margin */
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+    }
+
+    .project-box img {
+      width: 250px;
+      height: auto;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+
+    /* Main content area of the project */
+    .project-content {
+      flex: 1
+      <!-- (continuing inside <style>) -->
+    .project-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .project-title {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .project-description {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .tech-tags {
+      margin-bottom: 10px;
+    }
+
+    .tech-tags span {
+      display: inline-block;
+      background-color: #d0e5ff;
+      color: #004080;
+      font-size: 13px;
+      padding: 4px 8px;
+      border-radius: 6px;
+      margin-right: 6px;
+      margin-bottom: 4px;
+    }
+
+    .project-links a {
+      font-family: 'Source Code Pro', monospace;
+      font-size: 14px;
+      color: #1a0dab;
+      margin-right: 15px;
+      text-decoration: none;
+    }
+
+    .project-links a:hover {
+      text-decoration: underline;
+    }
+
+    .project-small-description {
+      width: 200px;
+      font-size: 14px;
+      color: #555;
+      text-align: right;
+    }
+
+    @media (max-width: 768px) {
+      .project-box {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .project-small-description {
+        text-align: left;
+        width: 100%;
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+    <div class="topbar">
+        <a href="index.html">About</a>
+        <a href="ml.html">ML</a>
+        <a href="software.html">Software</a>
+        <a href="teaching.html">Teaching</a>
+
+
+    </div>
+
+  <div class="projects-container">
+    <h1>Software Projects</h1>
+
+    <!-- Project 1 -->
+    <div class="project-box">
+      <img src="public/img/projects/project1.jpg" alt="Project 1 Image">
+      <div class="project-content">
+        <div>
+          <div class="project-title">Project One</div>
+          <div class="project-description">
+            Brief overview of Project One. Highlighting its main features and functionalities.
+          </div>
+          <div class="tech-tags">
+            <span>Python</span>
+            <span>Django</span>
+            <span>PostgreSQL</span>
+          </div>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/yourname/project1" target="_blank">GitHub</a>
+          <a href="https://project1-demo.com" target="_blank">Live Demo</a>
+        </div>
+      </div>
+      <div class="project-small-description">
+        Additional insights or unique aspects of Project One.
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-box">
+      <img src="public/img/projects/project2.jpg" alt="Project 2 Image">
+      <div class="project-content">
+        <div>
+          <div class="project-title">Project Two</div>
+          <div class="project-description">
+            Brief overview of Project Two. Highlighting its main features and functionalities.
+          </div>
+          <div class="tech-tags">
+            <span>React</span>
+            <span>Node.js</span>
+            <span>MongoDB</span>
+          </div>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/yourname/project2" target="_blank">GitHub</a>
+          <a href="https://project2-demo.com" target="_blank">Live Demo</a>
+        </div>
+      </div>
+      <div class="project-small-description">
+        Additional insights or unique aspects of Project Two.
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="project-box">
+      <img src="public/img/projects/project3.jpg" alt="Project 3 Image">
+      <div class="project-content">
+        <div>
+          <div class="project-title">Project Three</div>
+          <div class="project-description">
+            Brief overview of Project Three. Highlighting its main features and functionalities.
+          </div>
+          <div class="tech-tags">
+            <span>Java</span>
+            <span>Spring Boot</span>
+            <span>MySQL</span>
+          </div>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/yourname/project3" target="_blank">GitHub</a>
+          <a href="https://project3-demo.com" target="_blank">Live Demo</a>
+        </div>
+      </div>
+      <div class="project-small-description">
+        Additional insights or unique aspects of Project Three.
+      </div>
+    </div>
+
+    <!-- Project 4 -->
+    <div class="project-box">
+      <img src="public/img/projects/project4.jpg" alt="Project 4 Image">
+      <div class="project-content">
+        <div>
+          <div class="project-title">Project Four</div>
+          <div class="project-description">
+            Brief overview of Project Four. Highlighting its main features and functionalities.
+          </div>
+          <div class="tech-tags">
+            <span>Vue.js</span>
+            <span>Firebase</span>
+            <span>Tailwind CSS</span>
+          </div>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/yourname/project4" target="_blank">GitHub</a>
+          <a href="https://project4-demo.com" target="_blank">Live Demo</a>
+        </div>
+      </div>
+      <div class="project-small-description">
+        Additional insights or unique aspects of Project Four.
+      </div>
+    </div>
+  </div>
+</body>
+</html>
