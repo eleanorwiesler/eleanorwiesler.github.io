@@ -314,18 +314,6 @@
   left: -26px; /* sits to the right of center pole */
 }
 
-.year-label {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-family: 'Crimson Text', serif;
-  font-size: 18px;
-  font-weight: bold;
-  color: #666;
-  width: 25%;
-  text-align: center;
-}
-
 .left-year {
   order: -1;
 }
@@ -344,3 +332,60 @@
 
 
 
+@media screen and (max-width: 768px) {
+
+  .timeline-row {
+    flex-direction: column !important;
+    align-items: center;
+    margin: 40px 0;
+  }
+
+  .timeline-item {
+    width: 90%;
+    max-width: 500px;
+  }
+
+  .timeline-content {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .timeline-logo {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 15px;
+  }
+
+  .year-label {
+    position: static;
+    transform: none;
+    width: auto;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .timeline-dot {
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 10px;
+  }
+
+  #timeline::before {
+    left: 50%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .timeline-dot {
+    width: 10px;
+    height: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .timeline-dot {
+    display: none;
+  }
+}

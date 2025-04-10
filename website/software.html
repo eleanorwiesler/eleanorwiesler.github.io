@@ -1,26 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Software Projects - Eleanor Wiesler</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Eleanor Wiesler | Software Portfolio</title>
 
   <!-- Link to your existing CSS files -->
   <link rel="stylesheet" href="public/css/homeStylesheet.css">
   <link rel="stylesheet" href="public/css/generalStylesheet.css">
   <link rel="stylesheet" href="public/css/darkmodeStylesheet.css">
-  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@0;1&family=Source+Code+Pro:wght@600;700&display=swap" rel="stylesheet">
 
   <style>
-    /* General body styling */
     body {
-      font-family: 'Crimson Text', serif;
+      font-family: Arial, sans-serif;
       background: white;
       margin: 0;
       padding: 40px;
     }
 
-    /* Top navigation bar styling */
     .topbar {
       position: absolute;
       top: 20px;
@@ -49,13 +46,24 @@
       background-color: #e0e0e0;
     }
 
-    /* Container for all projects */
     .projects-container {
       max-width: 1000px;
       margin: 0 auto;
     }
 
-    /* Individual project box styling */
+    h1 {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    p.description {
+      font-size: 18px;
+      max-width: 750px;
+      color: #333;
+      margin-bottom: 40px;
+    }
+
     .project-box {
       display: flex;
       flex-direction: row;
@@ -64,7 +72,7 @@
       border: 1px solid #ccc;
       border-radius: 12px;
       padding: 20px;
-      margin: 40px 0; /* Increased top and bottom margin */
+      margin: 40px 0;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
     }
 
@@ -75,10 +83,6 @@
       object-fit: cover;
     }
 
-    /* Main content area of the project */
-    .project-content {
-      flex: 1
-      <!-- (continuing inside <style>) -->
     .project-content {
       flex: 1;
       display: flex;
@@ -90,6 +94,7 @@
       font-size: 22px;
       font-weight: bold;
       margin-bottom: 10px;
+      font-family: Arial, sans-serif;
     }
 
     .project-description {
@@ -113,15 +118,20 @@
     }
 
     .project-links a {
-      font-family: 'Source Code Pro', monospace;
+      display: inline-block;
       font-size: 14px;
-      color: #1a0dab;
-      margin-right: 15px;
+      font-weight: bold;
       text-decoration: none;
+      color: white;
+      background-color: #007BFF;
+      padding: 6px 14px;
+      border-radius: 20px;
+      margin-right: 10px;
+      transition: background-color 0.3s ease;
     }
 
     .project-links a:hover {
-      text-decoration: underline;
+      background-color: #0056b3;
     }
 
     .project-small-description {
@@ -147,115 +157,137 @@
 </head>
 
 <body>
-    <div class="topbar">
-        <a href="index.html">About</a>
-        <a href="ml.html">ML</a>
-        <a href="software.html">Software</a>
-        <a href="teaching.html">Teaching</a>
-
-
-    </div>
+  <div class="topbar">
+    <a href="index.html">About</a>
+    <a href="ml.html">AI/ML</a>
+    <a href="software.html">Software</a>
+    <a href="teaching.html">Teaching</a>
+  </div>
 
   <div class="projects-container">
-    <h1>Software Projects</h1>
+    <h1>Eleanor Wiesler — Software Portfolio</h1>
+    <p class="description">
+      A curated selection of my applied software and research projects, spanning machine learning, computer vision, graph theory, and biomedical modeling.
+    </p>
 
     <!-- Project 1 -->
     <div class="project-box">
-      <img src="public/img/projects/project1.jpg" alt="Project 1 Image">
+      <img src="public/img/project_images/newgraph.png" alt="Project 1 Image">
       <div class="project-content">
         <div>
-          <div class="project-title">Project One</div>
+          <div class="project-title">Curvature-based Machine Learning on Directed Networks with GNNs</div>
           <div class="project-description">
-            Brief overview of Project One. Highlighting its main features and functionalities.
+            Developed a GNN-based framework to learn curvature-informed representations of directed graphs, integrating optimal transport theory for graph learning tasks.
           </div>
           <div class="tech-tags">
+            <span>GNNs</span>
+            <span>Graph Theory</span>
             <span>Python</span>
-            <span>Django</span>
-            <span>PostgreSQL</span>
           </div>
         </div>
         <div class="project-links">
-          <a href="https://github.com/yourname/project1" target="_blank">GitHub</a>
-          <a href="https://project1-demo.com" target="_blank">Live Demo</a>
+          <a href="https://weber.seas.harvard.edu/" target="_blank">Lab Website</a>
         </div>
       </div>
       <div class="project-small-description">
-        Additional insights or unique aspects of Project One.
+        Research at Harvard SEAS with Prof. Melanie Weber, exploring geometric learning on directed networks.
       </div>
     </div>
 
     <!-- Project 2 -->
     <div class="project-box">
-      <img src="public/img/projects/project2.jpg" alt="Project 2 Image">
+      <img src="public/img/project_images/fish1.png" alt="Project 2 Image">
       <div class="project-content">
         <div>
-          <div class="project-title">Project Two</div>
+          <div class="project-title">Optimization of Dense Object Detection with CNNs via Pseudo-Simulated Annealing</div>
           <div class="project-description">
-            Brief overview of Project Two. Highlighting its main features and functionalities.
+            Designed a novel optimization framework that boosts CNN-based dense object detection using annealing-inspired heuristics for better convergence and accuracy.
           </div>
           <div class="tech-tags">
-            <span>React</span>
-            <span>Node.js</span>
-            <span>MongoDB</span>
+            <span>Python</span>
+            <span>PyTorch</span>
+            <span>Computer Vision</span>
           </div>
         </div>
         <div class="project-links">
-          <a href="https://github.com/yourname/project2" target="_blank">GitHub</a>
-          <a href="https://project2-demo.com" target="_blank">Live Demo</a>
+          <a href="https://eleanorwiesler.com/website/projects/psada_paper.pdf" target="_blank">Paper</a>
         </div>
       </div>
       <div class="project-small-description">
-        Additional insights or unique aspects of Project Two.
+        First-author research for Harvard CS283 Advanced Computer Vision, in collaboration with Prof. Todd Zickler and Trace Baxley.
       </div>
     </div>
 
     <!-- Project 3 -->
     <div class="project-box">
-      <img src="public/img/projects/project3.jpg" alt="Project 3 Image">
+      <img src="public/img/project_images/axivlight.png" alt="AxivLight">
       <div class="project-content">
         <div>
-          <div class="project-title">Project Three</div>
+          <div class="project-title">AxivLight: Outdoor Time Estimation from Wearable Sensors</div>
           <div class="project-description">
-            Brief overview of Project Three. Highlighting its main features and functionalities.
+            Built a machine learning model to infer outdoor time using light exposure data from Axivity AX3 sensors; enabled large-scale behavior analysis.
           </div>
           <div class="tech-tags">
-            <span>Java</span>
-            <span>Spring Boot</span>
-            <span>MySQL</span>
+            <span>ML</span>
+            <span>Time Series</span>
+            <span>Health Data</span>
           </div>
         </div>
         <div class="project-links">
-          <a href="https://github.com/yourname/project3" target="_blank">GitHub</a>
-          <a href="https://project3-demo.com" target="_blank">Live Demo</a>
+          <a href="https://www.bdi.ox.ac.uk/research/wearables-group" target="_blank">Lab Website</a>
         </div>
       </div>
       <div class="project-small-description">
-        Additional insights or unique aspects of Project Three.
+        First-author research conducted at Oxford University Big Data Institute with Prof. Aiden Doherty.
       </div>
     </div>
 
     <!-- Project 4 -->
     <div class="project-box">
-      <img src="public/img/projects/project4.jpg" alt="Project 4 Image">
+      <img src="public/img/project_images/bd-trees.png" alt="Project 4 Image">
       <div class="project-content">
         <div>
-          <div class="project-title">Project Four</div>
+          <div class="project-title">Physics-informed Reduced Deformation Collision Detection</div>
           <div class="project-description">
-            Brief overview of Project Four. Highlighting its main features and functionalities.
+            Engineered a reduced-deformation model for real-time collision detection, informed by physical constraints, for efficient simulation pipelines.
           </div>
           <div class="tech-tags">
-            <span>Vue.js</span>
-            <span>Firebase</span>
-            <span>Tailwind CSS</span>
+            <span>Physics Simulation</span>
+            <span>Geometry</span>
+            <span>Python</span>
           </div>
         </div>
         <div class="project-links">
-          <a href="https://github.com/yourname/project4" target="_blank">GitHub</a>
-          <a href="https://project4-demo.com" target="_blank">Live Demo</a>
+          <a href="https://summergeometry.org/sgi2024/reduced-deformation-collision-detection/" target="_blank">Paper</a>
         </div>
       </div>
       <div class="project-small-description">
-        Additional insights or unique aspects of Project Four.
+        MIT CSAIL Summer Geometry Initiative project with Prof. Paul Kry.
+      </div>
+    </div>
+
+    <!-- Project 5 -->
+    <div class="project-box">
+      <img src="public/img/project_images/pnas.png" alt="Project 5 Image">
+      <div class="project-content">
+        <div>
+          <div class="project-title">Vitamin B12 and Folic Acid Modulation of AHR for Nutritional Deficiency</div>
+          <div class="project-description">
+            Investigated how B12 and folate modulate immune pathways via AHR antagonism; contributed to a PNAS-published study on nutrient-mediated immunity.
+          </div>
+          <div class="tech-tags">
+            <span>Biochemistry</span>
+            <span>Immunology</span>
+            <span>Data Analysis</span>
+          </div>
+        </div>
+        <div class="project-links">
+          <a href="https://www.pnas.org/doi/full/10.1073/pnas.2006949117" target="_blank">Paper</a>
+          <a href="https://medicine.yale.edu/profile/akiko-iwasaki/" target="_blank">Lab Website</a>
+        </div>
+      </div>
+      <div class="project-small-description">
+        Co-authored study published in PNAS with Yale’s Iwasaki Lab and Daniel J. Kim.
       </div>
     </div>
   </div>
