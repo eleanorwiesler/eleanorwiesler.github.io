@@ -224,6 +224,55 @@
 
 
 /*# sourceMappingURL=homeStylesheet.css.map */
+.timeline-row {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: -40px 0; /* overlap timeline blocks */
+}
+
+.timeline-item {
+  width: 50%;
+  position: relative;
+  padding: 15px 30px;
+  box-sizing: border-box;
+}
+
+.timeline-item.left {
+  text-align: right;
+  align-items: flex-end;
+}
+
+.timeline-item.right {
+  text-align: left;
+  align-items: flex-start;
+}
+
+.timeline-content {
+  background: #f1f1f1;
+  border-radius: 20px;
+  padding: 12px 18px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.timeline-item.left .timeline-content {
+  justify-content: flex-end;
+  flex-direction: row-reverse;
+}
+
+.timeline-logo {
+  max-width: 80px;
+  max-height: 80px;
+  object-fit: contain;
+  flex-shrink: 0;
+  border-radius: 10px;
+}
+
+/* timeline line + dots */
 #timeline {
   position: relative;
   margin: 60px auto;
@@ -244,90 +293,54 @@
   z-index: 0;
 }
 
-
-.timeline-item {
-  position: relative;
-  width: 50%;
-  padding: 10px 40px; /* reduced from 20px */
-  box-sizing: border-box;
-}
-
-.timeline-item.left {
-  left: 0;
-  text-align: right;
-}
-
-.timeline-item.right {
+.timeline-dot {
+  position: absolute;
+  top: 50%;
   left: 50%;
-  text-align: left;
+  transform: translate(-50%, -50%);
+  width: 14px;
+  height: 14px;
+  background-color: #333;
+  border: 3px solid white;
+  border-radius: 50%;
+  z-index: 3;
 }
 
-.timeline-content {
-  background: #f1f1f1;
-  padding: 20px;
-  border-radius: 20px;
-  position: relative;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+.timeline-item.left .timeline-dot {
+  right: -26px; /* sits to the left of center pole */
 }
 
-.timeline-item.left .timeline-content {
-  margin-right: auto;
-  justify-content: flex-end;
+.timeline-item.right .timeline-dot {
+  left: -26px; /* sits to the right of center pole */
 }
 
-.timeline-item.right .timeline-content {
-  margin-left: auto;
-  justify-content: flex-start;
+.year-label {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: 'Crimson Text', serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #666;
+  width: 25%;
+  text-align: center;
 }
 
-.timeline-logo {
-  max-width: 80px;           /* keeps logos within a box */
-  max-height: 80px;          /* set a height limit too */
-  width: auto;
-  height: auto;
-  object-fit: contain;       /* maintain aspect ratio */
-  flex-shrink: 0;            /* prevents logo from shrinking too small */
+.left-year {
+  order: -1;
+}
+
+.right-year {
+  order: 2;
+}
+
+.timeline-row.right {
+  flex-direction: row;
+}
+
+.timeline-row.left {
+  flex-direction: row-reverse;
 }
 
 
-.timeline-content h3 {
-  margin: 0;
-  font-size: 1.2em;
-  color: #222;
-}
-
-.timeline-content p {
-  margin: 5px 0 0;
-  color: #333;
-}
-
-/* Optional responsive tweak */
-@media screen and (max-width: 768px) {
-  #timeline::before {
-      left: 20px;
-  }
-
-  .timeline-item {
-      width: 100%;
-      padding-left: 60px;
-      padding-right: 20px;
-  }
-
-  .timeline-item.right {
-      left: 0;
-  }
-
-  .timeline-content {
-      flex-direction: row;
-      justify-content: flex-start;
-  }
-}
-.timeline-item.left .timeline-content {
-  margin-right: auto;
-  justify-content: flex-end;
-  flex-direction: row-reverse; /* 🔁 flip the logo to the right */
-}
 
