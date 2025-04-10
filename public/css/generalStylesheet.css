@@ -71,3 +71,29 @@ a {
 .rounded-headshot {
     border-radius: 20px;
 }
+.topbar {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    display: flex;
+    gap: 10px;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 16px;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 5px 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.topbar a {
+    text-decoration: none;
+    color: #000;
+    padding: 3px 8px;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+.topbar a:hover {
+    background-color: #ddd;
+}
