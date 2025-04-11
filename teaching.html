@@ -1,31 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Teaching - Eleanor Wiesler</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="public/css/homeStylesheet.css">
-    <link rel="stylesheet" href="public/css/generalStylesheet.css">
-    <link rel="stylesheet" href="public/css/darkmodeStylesheet.css">
-    <script src="src/js/researchListBuilder.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@0;1&family=Source+Code+Pro:wght@600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Eleanor Wiesler | Teaching</title>
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="public/css/homeStylesheet.css">
+  <link rel="stylesheet" href="public/css/generalStylesheet.css">
+  <link rel="stylesheet" href="public/css/darkmodeStylesheet.css">
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@0;1&family=Source+Code+Pro:wght@600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: white;
+      margin: 0;
+      padding: 40px;
+    }
+
+    .topbar {
+      position: absolute;
+      top: 20px;
+      right: 40px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 8px 12px;
+      border-radius: 10px;
+      font-family: 'Source Code Pro', monospace;
+      font-size: 14px;
+      z-index: 1000;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .topbar a {
+      color: #000;
+      text-decoration: none;
+      padding: 4px 8px;
+      border-radius: 5px;
+      transition: background-color 0.2s;
+    }
+
+    .topbar a:hover {
+      background-color: #e0e0e0;
+    }
+
+    .projects-container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .project-box {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 20px;
+      border: 1px solid #ccc;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 40px 0;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+    }
+
+    .project-box img {
+      width: 250px;
+      height: auto;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+
+    .project-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .project-title {
+      font-size: 15px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: black;
+    }
+
+    .project-description {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .tech-tags span {
+      display: inline-block;
+      background-color: #d0e5ff;
+      color: #004080;
+      font-size: 13px;
+      padding: 4px 8px;
+      border-radius: 6px;
+      margin-right: 6px;
+      margin-bottom: 4px;
+    }
+
+    .project-small-description {
+      font-size: 14px;
+      color: #555;
+      text-align: right;
+      margin-top: 12px;
+    }
+
+    @media (max-width: 768px) {
+      .project-box {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .project-small-description {
+        text-align: left;
+        width: 100%;
+        margin-top: 10px;
+      }
+    }
+  </style>
 </head>
+
 <body>
+  <div class="topbar">
+      <a href="index.html">About</a>
+      <a href="ml.html">AI/ML</a>
+      <a href="software.html">Software</a>
+      <a href="publications.html">Publications</a>
+      <a href="teaching.html">Teaching</a>
+  </div>
 
-    <div class="topbar">
-        <a href="index.html">About</a>
-        <a href="ml.html">AI/ML</a>
-        <a href="software.html">Software</a>
-        <a href="publications.html">Publications</a>
-        <a href="teaching.html">Teaching</a>
-    </div>
+  <div class="projects-container">
+    <h1>Teaching</h1>
 
-    <div id="main">
+    <div class="projects-container">
         <h1>Teaching</h1>
-        <div id="teaching-list">
-            <!-- Teaching list populated by researchListBuilder.js -->
+      
+        <!-- Teaching Item 1 -->
+        <div class="project-box">
+          <img src="public/img/project_images/diffgeo.png" alt="Differential Geometry Course Image">
+          <div class="project-content">
+            <div class="project-title">Math 136: Differential Geometry</div>
+            <div class="project-description">
+              Assisted in teaching Differential Geometry, focusing on the study of curves, surfaces, and manifolds.
+            </div>
+            <div class="tech-tags">
+              <span>Harvard University</span>
+              <span>Lead Instructor: Oliver Knill</span>
+            </div>
+            <div class="project-small-description">
+                Fall 2024: Taught advanced mathematics students as a course assistant by grading coursework, running office hours, and providing 1:1 and small group lectures. 
+            </div>
+          </div>
         </div>
-    </div>
+      
+        <!-- Teaching Item 2 -->
+        <div class="project-box">
+          <img src="public/img/project_images/linalg.png" alt="Linear Algebra Course Image">
+          <div class="project-content">
+            <div class="project-title">Math 121: Advanced Theoretical Linear Algebra</div>
+            <div class="project-description">
+              Participated in teaching Linear Algebra, covering vector spaces, linear transformations, and matrix theory.
+            </div>
+            <div class="tech-tags">
+              <span>Harvard University</span>
+            </div>
+            <div class="project-small-description">
+                Spring 2024, Spring 2025: Taugh theoretical mathematics students as a course assistant by grading coursework, running office hours, and providing 1:1 and small group lectures, especially with regards to bridging applied and theoretical linear algebra. 
+    
+            </div>
+          </div>
+        </div>
+      </div>
+      
 
+    <!-- Add more entries below as needed -->
+
+  </div>
 </body>
 </html>
