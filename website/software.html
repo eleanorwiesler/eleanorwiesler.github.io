@@ -67,7 +67,7 @@
     .project-box {
       display: flex;
       flex-direction: row;
-      align-items: center;
+      align-items: flex-start;
       gap: 20px;
       border: 1px solid #ccc;
       border-radius: 12px;
@@ -91,11 +91,12 @@
     }
 
     .project-title {
-      font-size: 22px;
-      font-weight: bold;
-      margin-bottom: 10px;
-      font-family: Arial, sans-serif;
-    }
+  font-size: 15px;       /* adjust size here */
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: black;          /* this makes the title visible */
+}
+
 
     .project-description {
       font-size: 16px;
@@ -135,10 +136,10 @@
     }
 
     .project-small-description {
-      width: 200px;
       font-size: 14px;
       color: #555;
       text-align: right;
+      margin-top: 12px;
     }
 
     @media (max-width: 768px) {
@@ -165,32 +166,24 @@
   </div>
 
   <div class="projects-container">
-    <h1>Eleanor Wiesler — Software Portfolio</h1>
-    <p class="description">
-      A curated selection of my applied software and research projects, spanning machine learning, computer vision, graph theory, and biomedical modeling.
-    </p>
-
     <!-- Project 1 -->
     <div class="project-box">
-      <img src="public/img/project_images/newgraph.png" alt="Project 1 Image">
+      <img src="public/img/project_images/atmos.png" alt="Project 1 Image">
       <div class="project-content">
-        <div>
-          <div class="project-title">Curvature-based Machine Learning on Directed Networks with GNNs</div>
-          <div class="project-description">
-            Developed a GNN-based framework to learn curvature-informed representations of directed graphs, integrating optimal transport theory for graph learning tasks.
-          </div>
-          <div class="tech-tags">
-            <span>GNNs</span>
-            <span>Graph Theory</span>
-            <span>Python</span>
-          </div>
+        <div class="project-title"> AtmosStream </div>
+        <div class="tech-tags">
+          <span>Python</span>
+          <span>FastAPI</span>
+          <span>PostgreSQL</span>
+          <span>Apache Beam</span>
+          <span>React</span>
         </div>
         <div class="project-links">
-          <a href="https://weber.seas.harvard.edu/" target="_blank">Lab Website</a>
+          <a href="https://github.com/eleanorwiesler/atmosstream" target="_blank">Github</a>
         </div>
-      </div>
-      <div class="project-small-description">
-        Research at Harvard SEAS with Prof. Melanie Weber, exploring geometric learning on directed networks.
+        <div class="project-small-description">
+            AtmosStream is a full-stack real-time data platform that fetches and displays weather and air quality data for multiple cities. It uses a distributed data pipeline built with Apache Beam, stores results in PostgreSQL, serves data via a FastAPI backend, and visualizes it in a responsive React dashboard. Data is sourced from OpenWeatherMap and AirNow APIs.
+        </div>
       </div>
     </div>
 
@@ -198,23 +191,21 @@
     <div class="project-box">
       <img src="public/img/project_images/fish1.png" alt="Project 2 Image">
       <div class="project-content">
-        <div>
-          <div class="project-title">Optimization of Dense Object Detection with CNNs via Pseudo-Simulated Annealing</div>
-          <div class="project-description">
-            Designed a novel optimization framework that boosts CNN-based dense object detection using annealing-inspired heuristics for better convergence and accuracy.
-          </div>
-          <div class="tech-tags">
-            <span>Python</span>
-            <span>PyTorch</span>
-            <span>Computer Vision</span>
-          </div>
+        <div class="project-title"> Simulated Annealing for Improved Convolutional Nueral Network-based Crowded Object Detection</div>
+        <div class="project-description">
+          Designed a novel optimization framework that boosts CNN-based dense object detection using annealing-inspired heuristics for better convergence and accuracy.
+        </div>
+        <div class="tech-tags">
+          <span>Python</span>
+          <span>PyTorch</span>
+          <span>Computer Vision</span>
         </div>
         <div class="project-links">
           <a href="https://eleanorwiesler.com/website/projects/psada_paper.pdf" target="_blank">Paper</a>
         </div>
-      </div>
-      <div class="project-small-description">
-        First-author research for Harvard CS283 Advanced Computer Vision, in collaboration with Prof. Todd Zickler and Trace Baxley.
+        <div class="project-small-description">
+          First-author research for Harvard CS283 Advanced Computer Vision, in collaboration with Prof. Todd Zickler and Trace Baxley.
+        </div>
       </div>
     </div>
 
@@ -222,74 +213,27 @@
     <div class="project-box">
       <img src="public/img/project_images/axivlight.png" alt="AxivLight">
       <div class="project-content">
-        <div>
-          <div class="project-title">AxivLight: Outdoor Time Estimation from Wearable Sensors</div>
-          <div class="project-description">
-            Built a machine learning model to infer outdoor time using light exposure data from Axivity AX3 sensors; enabled large-scale behavior analysis.
-          </div>
-          <div class="tech-tags">
-            <span>ML</span>
-            <span>Time Series</span>
-            <span>Health Data</span>
-          </div>
+        <div class="project-title"> Light-Based Outdoor Time Estimation with Unsupervised Clustering for Axivity AX3 Wearable Device Data in UK Biobank Health Records</div>
+        <div class="project-description">
+          Built a machine learning model to infer outdoor time using light exposure data from Axivity AX3 sensors; enabled large-scale behavior analysis.
+        </div>
+        <div class="tech-tags">
+          <span>ML</span>
+          <span>Time Series</span>
+          <span>Health Data</span>
         </div>
         <div class="project-links">
           <a href="https://www.bdi.ox.ac.uk/research/wearables-group" target="_blank">Lab Website</a>
         </div>
-      </div>
-      <div class="project-small-description">
-        First-author research conducted at Oxford University Big Data Institute with Prof. Aiden Doherty.
+        <div class="project-small-description">
+          First-author research conducted at Oxford University Big Data Institute with Prof. Aiden Doherty.
+        </div>
       </div>
     </div>
 
-    <!-- Project 4 -->
-    <div class="project-box">
-      <img src="public/img/project_images/bd-trees.png" alt="Project 4 Image">
-      <div class="project-content">
-        <div>
-          <div class="project-title">Physics-informed Reduced Deformation Collision Detection</div>
-          <div class="project-description">
-            Engineered a reduced-deformation model for real-time collision detection, informed by physical constraints, for efficient simulation pipelines.
-          </div>
-          <div class="tech-tags">
-            <span>Physics Simulation</span>
-            <span>Geometry</span>
-            <span>Python</span>
-          </div>
-        </div>
-        <div class="project-links">
-          <a href="https://summergeometry.org/sgi2024/reduced-deformation-collision-detection/" target="_blank">Paper</a>
-        </div>
-      </div>
-      <div class="project-small-description">
-        MIT CSAIL Summer Geometry Initiative project with Prof. Paul Kry.
-      </div>
-    </div>
+      
 
-    <!-- Project 5 -->
-    <div class="project-box">
-      <img src="public/img/project_images/pnas.png" alt="Project 5 Image">
-      <div class="project-content">
-        <div>
-          <div class="project-title">Vitamin B12 and Folic Acid Modulation of AHR for Nutritional Deficiency</div>
-          <div class="project-description">
-            Investigated how B12 and folate modulate immune pathways via AHR antagonism; contributed to a PNAS-published study on nutrient-mediated immunity.
-          </div>
-          <div class="tech-tags">
-            <span>Biochemistry</span>
-            <span>Immunology</span>
-            <span>Data Analysis</span>
-          </div>
-        </div>
-        <div class="project-links">
-          <a href="https://www.pnas.org/doi/full/10.1073/pnas.2006949117" target="_blank">Paper</a>
-          <a href="https://medicine.yale.edu/profile/akiko-iwasaki/" target="_blank">Lab Website</a>
-        </div>
-      </div>
-      <div class="project-small-description">
-        Co-authored study published in PNAS with Yale’s Iwasaki Lab and Daniel J. Kim.
-      </div>
-    </div>
+
   </div>
 </body>
 </html>
