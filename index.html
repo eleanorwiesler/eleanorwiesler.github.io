@@ -12,179 +12,165 @@
     <script src="src/js/picturePicker.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@0;1&family=Source+Code+Pro:wght@600;700&display=swap" rel="stylesheet">
     <link rel="icon" href="favicon.png" sizes="32x32">
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
 </head>
 <body>
 
-    <div class="topbar">
-        <a href="index.html">About</a>
-        <a href="ml.html">AI/ML</a>
-        <a href="software.html">Software</a>
-        <a href="publications.html">Biomedical</a>
-        <a href="teaching.html">Teaching</a>
-    </div>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #ffffff;
+            min-height: 100vh;
+        }
+        h1, h2, h5, p, a {
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
-    <div id="sidebar">
-        <div id="sidebar-box">
-            <h1 id="name">Eleanor Wiesler</h1> 
-            <img src="/website/public/img/portrait/ox_headshot.jpg" alt="Portrait" style="width:300px; height:auto; border-radius: 20px; display: block;">
-            <div id="info">
-                <h2>Mathematics and Computer Science @ Harvard</h2>
-                <br><br>
-                <div id="social-icons" style="display: flex; gap: 10px;">
-                    <a href="mailto:ewiesler@college.harvard.edu" target="_blank" aria-label="Email">
-                        <img src="/website/public/img/icons/icons8-mail.svg" alt="Mail Icon" style="width:30px;">
-                    </a>
-                    <a href="https://github.com/eleanorwiesler" target="_blank" aria-label="GitHub">
-                        <img src="/website/public/img/icons/icons8-github-50.png" alt="Github Icon" style="width:30px;">
-                    </a>
-                    <a href="https://www.linkedin.com/in/eleanor-wiesler/" target="_blank" aria-label="LinkedIn">
-                        <img src="/website/public/img/icons/icons8-linkedin.svg" alt="Linkedin Icon" style="width:30px;">
-                    </a>
-                    <a href="https://scholar.google.com/citations?user=wEzFCIwAAAAJ&hl=en&oi=ao" target="_blank" aria-label="Google Scholar">
-                        <img src="/website/public/img/icons/icons8-google-scholar.svg" alt="Google Scholar Icon" style="width:30px;">
-                    </a>
-                </div>
+        .page {
+            max-width: 920px;
+            margin: 0 auto;
+            padding: 8rem 2rem 5rem;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 2.5rem;
+        }
+        .left-col {
+            flex-shrink: 0;
+            width: 240px;
+        }
+        .right-col {
+            flex: 1;
+            min-width: 0;
+            padding-top: 2.6em;
+        }
+        img.portrait {
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+            display: block;
+            object-fit: cover;
+        }
+        #typing-header {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.3em;
+            font-weight: 400;
+            color: #333;
+            min-height: 1.4em;
+            margin-bottom: 0.8em;
+        }
+        #typing-header .ti-cursor {
+            font-weight: 200;
+            color: #333;
+        }
+
+        @media only screen and (max-width: 700px) {
+            .page {
+                flex-direction: column;
+                align-items: center;
+                padding: 2rem 1.5rem;
+                gap: 1.5rem;
+            }
+            #typing-header {
+                text-align: center;
+            }
+            .right-col {
+                padding-top: 0;
+            }
+            .left-col {
+                width: 280px;
+            }
+            img.portrait {
+                height: auto !important;
+            }
+            #social-icons {
+                justify-content: center;
+            }
+        }
+        .about-bubble {
+            background: #f7f7f8;
+            border-left: 3px solid #333;
+            border-radius: 0 12px 12px 0;
+            padding: 1.8em 2em;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .about-bubble p {
+            margin-bottom: 1em;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .about-bubble p:last-child {
+            margin-bottom: 0;
+        }
+        .about-bubble a {
+            color: #0096EA;
+            text-decoration: none;
+        }
+        .about-bubble a:hover {
+            text-decoration: underline;
+        }
+        #social-icons {
+            display: flex;
+            gap: 12px;
+            margin-top: 1.5em;
+            justify-content: center;
+        }
+    </style>
+
+    <div class="page">
+        <div class="left-col">
+            <div id="typing-header"></div>
+            <img class="portrait" src="/website/public/img/portrait/ox_headshot.jpg" alt="Portrait">
+            <div id="social-icons">
+                <a href="mailto:ewiesler@college.harvard.edu" target="_blank" aria-label="Email">
+                    <img src="/website/public/img/icons/icons8-mail.svg" alt="Mail Icon" style="width:30px;">
+                </a>
+                <a href="https://github.com/eleanorwiesler" target="_blank" aria-label="GitHub">
+                    <img src="/website/public/img/icons/icons8-github-50.png" alt="Github Icon" style="width:30px;">
+                </a>
+                <a href="https://www.linkedin.com/in/eleanor-wiesler/" target="_blank" aria-label="LinkedIn">
+                    <img src="/website/public/img/icons/icons8-linkedin.svg" alt="Linkedin Icon" style="width:30px;">
+                </a>
+                <a href="https://scholar.google.com/citations?user=wEzFCIwAAAAJ&hl=en&oi=ao" target="_blank" aria-label="Google Scholar">
+                    <img src="/website/public/img/icons/icons8-google-scholar.svg" alt="Google Scholar Icon" style="width:30px;">
+                </a>
+            </div>
+        </div>
+        <div class="right-col">
+            <div class="about-bubble">
+                <p>I am a Software Engineer at <a href="https://www.monumentallabs.co/" target="_blank">Monumental Labs</a> in New York City. I work on 3D machine learning and simulation to develop autonomous toolpaths for CNC robots.</p>
+                <p>In May I graduated from <a href="https://www.math.harvard.edu/" target="_blank">Harvard University</a> where I studied mathematics and computer science and obtained high honors. In the Harvard GeoML lab I conducted original research and wrote a senior <a href="https://live-hu-math.pantheonsite.io/wp-content/uploads/Eleanor-Wiesler-Thesis.pdf" target="_blank">thesis</a> on theoretical differential geometry for graph machine learning.</p>
+                <p>At <a href="https://www.csail.mit.edu/" target="_blank">MIT CSAIL</a> I received a fellowship to work on 3D graphics and computer vision problems. Prior to that I conducted machine learning research at Oxford University in the <a href="https://github.com/OxWearables" target="_blank">OxWearables</a> Lab.</p>
             </div>
         </div>
     </div>
+    <script>
+        function matchPhotoToBubble() {
+            const bubble = document.querySelector('.about-bubble');
+            const photo = document.querySelector('img.portrait');
+            if (bubble && photo && window.innerWidth > 700) {
+                photo.style.height = bubble.offsetHeight + 'px';
+            } else if (photo) {
+                photo.style.height = 'auto';
+            }
+        }
+        window.addEventListener('load', matchPhotoToBubble);
+        window.addEventListener('resize', matchPhotoToBubble);
 
-    <div id="main">
-        <p id="about">
-            Hi, I'm a senior at Harvard studying Mathematics with a secondary in Computer Science. Currently, I am a member of the <a href="https://weber.seas.harvard.edu/" style="color: blue;">Geometric Machine Learning Group</a> at Harvard SEAS in the Department of Applied Mathematics, advised by Professor Melanie Weber where I am working on novel approaches for machine learning on directed networks using discrete Ricci curvature.
-        </p>
-		<br>
-        <p id="about">
-            I was awarded the 2024 MIT Summer Geometry Initiative Fellowship at <a href="https://sgi.mit.edu/" style="color: blue;">MIT Computer Science and AI Lab (CSAIL)</a> where I conducted geometric processing and machine learning research in computer vision and computer graphics advised by Prof. Justin Solomon. Previously in 2023, I was a Machine Learning Research Intern at the <a href="https://www.bdi.ox.ac.uk/research/wearables-group" style="color: blue;">University of Oxford Big Data Institute</a>, advised by Prof. Aiden Doherty in the Wearables Group.
-        </p>
-		<br>
-        <p id="about">
-            Before that, I conducted computational research on population health at 
-<a href="https://ciss.umayor.cl/en/" style="color: blue;">Universidad Mayor</a> 
-in Santiago, Chile, under Prof. Nicolas Montalva with a fellowship from Harvard DRCLAS. 
-
-Even before that I was a research intern during my gap year at the biotech company 
-<a href="https://www.detect.com/" style="color: blue;">Detect</a> 
-researching SARS-CoV-2 primers for at-home molecular Covid-19 diagnostics from 2020-2021. 
-
-I started my research journey in 2019 in the lab of Professor 
-<a href="https://time.com/6964230/akiko-iwasaki/" style="color: blue;">Akiko Iwasaki</a> 
-at <a href="https://medicine.yale.edu/lab/iwasaki/projects/" style="color: blue;">Yale School of Medicine</a> 
-in the Department of Immunobiology where I published my cell culture and molecular research contributions in PNAS related to birth defects and molecular biology.
-        </p>
-        <div id="timeline">
-
-            <!-- RIGHT SIDE -->
-            <div class="timeline-row right">
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <a href="https://www.harvard.edu/" target="_blank" rel="noopener">
-                            <img src="public/img/logos/harvard.png" alt="Harvard Logo" class="timeline-logo">
-                        </a>
-                        <div>
-                            <h5>Aug 2021 – May 2025</h5>
-                            <p>Bachelor's in Mathematics, secondary in Computer Science</p>
-                            <p>Cambridge, MA</p>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="timeline-dot"></div>
-            </div>
-        
-            <!-- LEFT SIDE -->
-            <div class="timeline-row left">
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <a href="https://summergeometry.org/" target="_blank" rel="noopener">
-                            <img src="public/img/logos/mit.png" alt="MIT Logo" class="timeline-logo">
-                        </a>
-                        <div>
-                            <h5>Jun 2024 – Aug 2024</h5>
-                            <p>Computer Vision and Graphics Research Fellow</p>
-                            <p>Cambridge, MA</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="timeline-dot"></div>
-            </div>
-        
-            <!-- RIGHT SIDE -->
-            <div class="timeline-row right">
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <a href="https://www.bdi.ox.ac.uk/" target="_blank" rel="noopener">
-                            <img src="public/img/logos/oxford.png" alt="Oxford Logo" class="timeline-logo">
-                        </a>
-                        <div>
-                            <h5>Jun 2023 – Aug 2023</h5>
-                            <p>Machine Learning Research @ University of Oxford BDI, Wearables Group</p>
-                            <p>Oxford, UK</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="timeline-dot"></div>
-            </div>
-        
-            <!-- LEFT SIDE -->
-            <div class="timeline-row left">
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <a href="https://ciss.umayor.cl/en/" target="_blank" rel="noopener">
-                            <img src="public/img/logos/umayor.png" alt="Universidad Mayor Logo" class="timeline-logo">
-                        </a>
-                        <div>
-                            <h5>Jul 2022 – Aug 2022</h5>
-                            <p>Computational Research Intern. DRCLAS Fellowship</p>
-                            <p> Santiago, Chile </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="timeline-dot"></div>
-            </div>
-        
-            <!-- RIGHT SIDE -->
-            <div class="timeline-row right">
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <a href="https://www.detect.com/" target="_blank" rel="noopener">
-                            <img src="public/img/logos/detect.png" alt="Detect Logo" class="timeline-logo">
-                        </a>
-                        <div>
-                            <h5>Aug 2020 – Mar 2021</h5>
-                            <p>Research Intern @ Detect<br>Covid-19 diagnostics</p>
-                            <p> Guilford, CT </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="timeline-dot"></div>
-            </div>
-        
-            <!-- LEFT SIDE -->
-            <div class="timeline-row left">
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <a href="https://medicine.yale.edu/lab/iwasaki/" target="_blank" rel="noopener">
-                            <img src="public/img/logos/yale.png" alt="Yale Logo" class="timeline-logo">
-                        </a>
-                        <div>
-                            <h5>Jun 2019 – Jan 2020</h5>
-                            <p>Research @ Yale Immunobiology<br>Published in PNAS</p>
-                            <p> New Haven, CT </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="timeline-dot"></div>
-            </div>
-        
-        </div>
-        
-        
-        
-        
-
-    <p id="footer">
-        Copyright Eleanor Wiesler, last updated Jan 21st, 2025. 
-    </p>
-
+        document.addEventListener('DOMContentLoaded', function() {
+            new TypeIt('#typing-header', {
+                speed: 80,
+                waitUntilVisible: true,
+                cursor: true,
+                cursorChar: '|'
+            })
+            .type("Hi, I'm <strong>Eleanor Wiesler</strong>")
+            .go();
+        });
+    </script>
 </body>
 </html>
