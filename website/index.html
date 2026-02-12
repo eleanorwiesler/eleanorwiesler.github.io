@@ -49,7 +49,6 @@
             height: auto;
             border-radius: 20px;
             display: block;
-            object-fit: cover;
         }
         #typing-header {
             font-family: Arial, Helvetica, sans-serif;
@@ -81,7 +80,7 @@
                 width: 280px;
             }
             img.portrait {
-                height: auto !important;
+                height: auto;
             }
             #social-icons {
                 justify-content: center;
@@ -149,18 +148,6 @@
         </div>
     </div>
     <script>
-        function matchPhotoToBubble() {
-            const bubble = document.querySelector('.about-bubble');
-            const photo = document.querySelector('img.portrait');
-            if (bubble && photo && window.innerWidth > 700) {
-                photo.style.height = bubble.offsetHeight + 'px';
-            } else if (photo) {
-                photo.style.height = 'auto';
-            }
-        }
-        window.addEventListener('load', matchPhotoToBubble);
-        window.addEventListener('resize', matchPhotoToBubble);
-
         document.addEventListener('DOMContentLoaded', function() {
             new TypeIt('#typing-header', {
                 speed: 80,
