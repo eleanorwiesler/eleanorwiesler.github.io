@@ -45,10 +45,12 @@
             padding-top: 2.6em;
         }
         img.portrait {
-            width: 100%;
+            width: auto;
+            max-width: 100%;
             height: auto;
             border-radius: 20px;
             display: block;
+            margin: 0 auto;
         }
         #typing-header {
             font-family: Arial, Helvetica, sans-serif;
@@ -80,7 +82,8 @@
                 width: 280px;
             }
             img.portrait {
-                height: auto;
+                height: auto !important;
+                width: 100%;
             }
             #social-icons {
                 justify-content: center;
@@ -148,6 +151,26 @@
         </div>
     </div>
     <script>
+        function matchPhotoToBubble() {
+            const bubble = document.querySelector('.about-bubble');
+            const photo = document.querySelector('img.portrait');
+            const leftCol = document.querySelector('.left-col');
+            if (!bubble || !photo || !leftCol) return;
+
+            if (window.innerWidth > 700) {
+                var targetHeight = bubble.offsetHeight;
+                var aspectRatio = photo.naturalWidth / photo.naturalHeight;
+                var targetWidth = Math.round(targetHeight * aspectRatio);
+                photo.style.height = targetHeight + 'px';
+                leftCol.style.width = targetWidth + 'px';
+            } else {
+                photo.style.height = 'auto';
+                leftCol.style.width = '';
+            }
+        }
+        window.addEventListener('load', matchPhotoToBubble);
+        window.addEventListener('resize', matchPhotoToBubble);
+
         document.addEventListener('DOMContentLoaded', function() {
             new TypeIt('#typing-header', {
                 speed: 80,
