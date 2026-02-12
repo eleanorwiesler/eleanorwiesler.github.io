@@ -1,1 +1,20 @@
-<meta http-equiv="refresh" content="0; url=https://eleanorwiesler.github.io/website/index.html">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Eleanor Wiesler</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <script>
+        fetch('website/index.html')
+            .then(function(r) { return r.text(); })
+            .then(function(html) {
+                html = html.replace('<head>', '<head><base href="website/">');
+                document.open();
+                document.write(html);
+                document.close();
+            });
+    </script>
+</body>
+</html>
